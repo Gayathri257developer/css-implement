@@ -1,0 +1,143 @@
+.centered{
+    position: absolute;  
+    top: 20%;
+    left: 5%;
+    font-size: 25px;
+}
+button{
+    background-color: aqua;
+    padding: 10px 20px;
+    border: 1px solid aqua;
+}
+.header{
+    background-color: bisque;
+}
+.img1{
+    margin: 20px;
+    width: 100px;
+    height: 70px;
+ }
+ a{
+    background-color: rgb(16, 82, 236);
+    padding: 10px;
+    color: white;
+    float: right;
+    margin: 40px 20px;
+    text-decoration: none;
+ }
+ .container{
+    display: flex;
+    flex-direction: row;
+}
+.box1{
+    background-color: rgb(91, 191, 195);
+    width: 100px;
+    text-align: center;
+    margin: 5px;
+    height: 100px;
+}
+.box2{
+    background-color: rgb(30, 23, 232);
+    width: 100px;
+    text-align: center;
+    margin: 5px;
+    height: 100px;
+}
+.box3{
+    background-color: rgb(224, 73, 229);
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+    height: 100px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 657px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.btn1{
+    background-color: blue;
+    color: white;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+.btn2{
+    background-color: blue;
+    color: white;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+@media screen and (min-width: 320px) and (max-width: 480px){
+.button{
+    display: flex; 
+    flex-direction: column;
+}
+    .btn1{
+    width: 100px;
+    height: 40px;
+    background-color: green;
+}
+.btn2{
+    width: 100px;
+    height: 40px;
+    background-color: green;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+.button{
+    display: flex;
+    flex-direction: column;
+}
+    .btn1{
+        width: 100px;
+    height: 40px;
+    background-color: red;
+}
+.btn2{
+    width: 100px;
+    height: 40px;
+    background-color: red;
+}
+}
+.box{
+    background-color: coral;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+.box:hover{
+    width: 200px;
+    background-color: crimson;
+}
+.container1{
+    margin: 40px;
+}
+.item{
+    background-color: chocolate;
+    width: 100px;
+    height: 100px;
+    animation: anim 4s linear infinite normal;
+}
+@keyframes anim {
+   100%{
+    transform: rotate(180deg);
+    background-color: rgb(243, 245, 246);
+   } 
+}
+.container2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+.item1{
+    background-color: darkgoldenrod;
+    padding: 20px;
+    text-align: center; 
+    border: 2px solid black;
+}
